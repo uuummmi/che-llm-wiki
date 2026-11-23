@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>作業說明：Loop、Graph 與反思</title>
+<style>:root{--bg:#f7f5f0;--fg:#1f2430;--card:#fff;--ln:#d9d4c8;--acc:#c2410c;--b:#1e5a8a}@media(prefers-color-scheme:dark){:root{--bg:#171a21;--fg:#e8e6df;--card:#222733;--ln:#3a4152;--acc:#fb923c;--b:#7ab8e8}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,"Noto Sans TC",sans-serif}main{max-width:900px;margin:0 auto;padding:20px}h1{font-size:28px}h2{margin-top:36px;border-bottom:2px solid var(--ln);padding-bottom:4px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:10px;padding:10px 16px;margin:12px 0}table{border-collapse:collapse;width:100%;font-size:15px}td,th{border:1px solid var(--ln);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--card)}
+svg{width:100%;height:auto}.bx{fill:var(--card);stroke:var(--b);stroke-width:2}.ck{fill:var(--card);stroke:var(--acc);stroke-width:2}.t{fill:var(--fg);font-size:13px}.ln{stroke:var(--fg);stroke-width:1.6;fill:none}.rd{stroke:var(--acc);stroke-width:1.8;fill:none;stroke-dasharray:5 3}.a{fill:var(--fg)}.ra{fill:var(--acc)}.warn{background:rgba(234,179,8,.15);border-left:4px solid #ca8a04;padding:8px 12px}</style></head><body><main>
+<h1>作業說明：Loop／Graph 與反思</h1>
+<p>主題：化學鍵結與分子結構。簡報：<code>../slides/index.html</code>。</p>
+<div class="warn"><b>目前狀態（如實）：</b>Wiki 目前有 <b>6 份來源</b>（6 個章節／小節檔，出自 2 本書）：以使用者提供的 Zumdahl 10e 為主（第 4 章 §4.9、第 8、9、10 章，共 4 份），另以 OpenStax Chemistry 2e 的 §7.5、§8.4（網頁，2 份）作跨來源對照。Lint 已跑一次（56 頁），唯一回報的是 index 開頭說明文字裡的範例連結「頁名」，不是真的壞連結。下面的反思是根據實際紀錄寫的，不是預先編的。</div>
+
+<h2>Step 3　Loop／Graph</h2>
+<svg viewBox="0 0 860 400" role="img" aria-label="流程圖">
+<defs><marker id="m" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" class="a"/></marker><marker id="r" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" class="ra"/></marker></defs>
+<rect class="bx" x="10" y="20" width="120" height="50" rx="8"/><text class="t" x="70" y="42" text-anchor="middle">① 讀 index</text><text class="t" x="70" y="60" text-anchor="middle">（檢索）</text>
+<rect class="bx" x="170" y="20" width="130" height="50" rx="8"/><text class="t" x="235" y="42" text-anchor="middle">② 查詢 Wiki</text><text class="t" x="235" y="60" text-anchor="middle">讀相關頁</text>
+<rect class="bx" x="340" y="20" width="130" height="50" rx="8"/><text class="t" x="405" y="42" text-anchor="middle">③ 整理大綱</text><text class="t" x="405" y="60" text-anchor="middle">頁↔Wiki 頁</text>
+<rect class="bx" x="510" y="20" width="130" height="50" rx="8"/><text class="t" x="575" y="42" text-anchor="middle">④ 逐頁草稿</text><text class="t" x="575" y="60" text-anchor="middle">論點＋出處</text>
+<rect class="ck" x="510" y="130" width="150" height="60" rx="8"/><text class="t" x="585" y="153" text-anchor="middle">⑤ 檢查</text><text class="t" x="585" y="172" text-anchor="middle">論點／數字／缺資料</text>
+<rect class="bx" x="700" y="130" width="150" height="60" rx="8"/><text class="t" x="775" y="153" text-anchor="middle">⑥ 生成 HTML</text><text class="t" x="775" y="172" text-anchor="middle">再截圖看圖</text>
+<rect class="ck" x="700" y="250" width="150" height="50" rx="8"/><text class="t" x="775" y="272" text-anchor="middle">⑦ 視覺檢查</text><text class="t" x="775" y="288" text-anchor="middle">通過→交付</text>
+<rect class="bx" x="170" y="250" width="200" height="60" rx="8"/><text class="t" x="270" y="273" text-anchor="middle">Ingest：補來源進 Wiki</text><text class="t" x="270" y="292" text-anchor="middle">（缺資料時回到這裡）</text>
+<path class="ln" d="M130 45H170" marker-end="url(#m)"/><path class="ln" d="M300 45H340" marker-end="url(#m)"/><path class="ln" d="M470 45H510" marker-end="url(#m)"/><path class="ln" d="M575 70V130" marker-end="url(#m)"/><path class="ln" d="M660 160H700" marker-end="url(#m)"/><path class="ln" d="M775 190V250" marker-end="url(#m)"/>
+<path class="rd" d="M510 170C440 170 420 120 405 70" marker-end="url(#r)"/><text class="t" x="420" y="140" style="fill:var(--acc)">不通過：退回③④重寫</text>
+<path class="rd" d="M510 190C420 230 380 250 370 270" marker-end="url(#r)"/><text class="t" x="390" y="232" style="fill:var(--acc)">缺資料</text>
+<path class="rd" d="M700 280C640 330 300 350 235 310" marker-end="url(#r)"/><text class="t" x="450" y="345" style="fill:var(--acc)">圖有問題：回⑥改（資料不對則回④）</text>
+<path class="rd" d="M270 250C260 170 250 110 235 70" marker-end="url(#r)"/><text class="t" x="180" y="150" style="fill:var(--acc)">補完重查</text>
+</svg>
+<table><tr><th>問題</th><th>回答</th></tr>
+<tr><td>哪些步驟會重複？</td><td>③④⑤ 這個小圈：檢查不通過就退回重寫，直到通過。另一個大圈是「缺資料 → 回 Ingest → 重新查詢」，這一圈代價高，所以只在檢查列出缺資料時才走。</td></tr>
+<tr><td>在哪裡檢查？</td><td>⑤（內容）與 ⑦（畫面）。內容檢查放在生成 HTML <b>之前</b>，因為在草稿階段改一句話很便宜，HTML 生成後再改要重跑整個頁面。</td></tr>
+<tr><td>在哪裡重新生成？</td><td>⑤ 不過 → 重寫 ③④；⑦ 不過 → 只重做 ⑥。</td></tr>
+<tr><td>為什麼？</td><td>簡報只准用 Wiki，所以「Wiki 沒有的東西」不能在生成時補，要回到 Ingest。這條規則讓每個錯誤能追到「是 Wiki 錯」還是「簡報寫錯」。</td></tr></table>
+
+<h2>Step 4　反思（根據本輪實際紀錄）</h2>
+<div class="card"><b>1. 哪個節點最容易出錯？</b><p>最容易錯的是<b>Ingest 的讀取與抄寫</b>，不是 Query。實際紀錄：pdftotext 把負號、上標、等號弄壞（數值類全部要看圖片重核）；引用頁碼 p.42 實為 p.41；章節 §8.11 實為 §8.12；術語不一致 3 處。Ingest 後半段（第 9、10 章）又出現：圖號打錯（圖 8.24 實為 9.24）、一段範例裡寫了自我更正的文字、把「各族第一個元素」誤讀成「第一週期」、兩處術語重複（plane／planar、三角錐）。Query 兩輪（21 頁、31 頁）的自動檢查都是 0 失敗，是因為 Wiki 在 Ingest 階段已經被核對過。</p></div>
+<div class="card"><b>2. 把哪個檢查提早？</b><p>兩次：(a) v3：數值在<b>讀取當下</b>用頁面圖片核對，而不是等寫完；(b) v4：連結、9 個欄位、術語、引用，改成<b>每次寫入後</b>自動跑，不等最後 Lint。Query 階段（v5）又加入數字比對、原文字串比對與渲染後看圖。</p></div>
+<div class="card"><b>3. 有沒有修改流程或 graph？</b><p>有，CLAUDE.md 從 v1 改到 v5，每次的原因都記在第 12 節 changelog。v5 的觸發原因：簡報有 100 條論點（第二輪擴到 31 頁、170 條），人工對照容易漏；另外，晶格能兩本書符號相反，原本的規則是「不一致就降為低信心」，但這是「定義方向不同」而不是事實衝突，所以我在頁面、log、CLAUDE.md 都註明例外並保留信心程度；而 H₂ 曲線的標籤壓在曲線上，是文字檢查完全看不到的，截圖才發現。</p></div>
+<div class="card"><b>4. 這個檢查本身的弱點（誠實）</b><p>原文字串檢查是我自己寫論點、自己挑字串，有「自己改自己考卷」的問題；Query 第一次就 0 失敗不代表內容完全正確。我用不存在的字串測過檢查器會失敗，但它抓不到「字串存在、卻用在錯的地方」。比較可靠的做法是讓另一個沒看過生產過程的檢查者抽查。</p></div>
+<div class="card"><b>5. 還沒做到的</b><ul><li>6 份來源中 4 份來自 Zumdahl（主要依據）、2 份來自 OpenStax；大部分頁面仍只有單一來源，信心程度多為「中」。OpenStax 是網頁讀取，沒有頁面圖片核對。</li><li>簡報沒有涵蓋液態、蒸氣壓、相圖、陶瓷、X 射線繞射（Wiki 沒有）。</li><li>未解決的 ⚠️：H–H 的 −458 與 432；N≡N 的 941 與 942；晶格能兩本書數值差約 2%（符號相反已說明）。</li><li>建議找同學或助教對照課本抽查幾頁，補上「不同人檢查」這一層。</li></ul></div>
+</main></body></html>
